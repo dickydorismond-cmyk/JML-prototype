@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>通用申请-审批页面</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <iframe id="approveFrame" src="./原型图样例/通用申请-审批页面.html" title="通用申请-审批页面"></iframe>
+
+  <div id="pdfModalMask" class="pdf-modal-mask">
+    <div class="pdf-modal" role="dialog" aria-modal="true" aria-label="PDF下载配置">
+      <div class="pdf-modal-header">
+        <span>PDF下载</span>
+        <button id="pdfModalClose" class="pdf-modal-close" type="button" aria-label="关闭">×</button>
+      </div>
+      <div class="pdf-modal-body">
+        <div class="pdf-panel">
+          <div class="pdf-panel-title">附件列表（多选）</div>
+          <ul id="pdfAttachmentList" class="pdf-list"></ul>
+        </div>
+        <div class="pdf-panel">
+          <div class="pdf-panel-title">已选附件顺序（可排序）</div>
+          <ul id="pdfSelectedList" class="pdf-list"></ul>
+        </div>
+      </div>
+      <div class="pdf-modal-footer">
+        <div id="pdfStatus" class="pdf-status"></div>
+        <div>
+          <button id="pdfModalCancel" class="pdf-btn" type="button">取消</button>
+          <button id="pdfModalConfirm" class="pdf-btn primary" type="button">确定下载</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
